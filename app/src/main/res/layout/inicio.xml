@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="30dp"
+		android:background="#F1F1F1">
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="left|center">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Usuario"
+				android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+			<TextView
+				android:id="@+id/txt_usuario_nombre"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Cambiar nombre"
+				android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Estado"
+				android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Normal"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:id="@+id/txt_estado"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:gravity="right|center_vertical">
+
+			<ImageButton
+				android:layout_width="100dp"
+				android:layout_height="100dp"
+				android:background="@drawable/casco80"
+				android:id="@+id/btn_fin_alerta"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="#F5F5F5"
+		android:gravity="center"
+		android:paddingTop="5dp"
+		android:paddingBottom="5dp"
+		android:paddingRight="30dp"
+		android:paddingLeft="30dp">
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="0dp"
+			android:paddingBottom="10dp"
+			android:paddingTop="10dp">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:text="Ruta"
+				android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+			<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent">
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="Iniciar"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:gravity="right"
+					android:id="@+id/txt_iniciar"/>
+
+			</RelativeLayout>
+
+		</LinearLayout>
+
+		<View
+			android:background="?android:attr/dividerVertical"
+			android:layout_width="match_parent"
+			android:layout_height="1dp"/>
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="10dp">
+
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Inicio"
+					android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="(0,0)"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:gravity="right"
+					android:id="@+id/txt_datos_inicio"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Distancia"
+					android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="0 m"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:gravity="right"
+					android:id="@+id/txt_datos_distancia"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Actual"
+					android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="(0,0)"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:gravity="right"
+					android:id="@+id/txt_datos_actual"/>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:paddingTop="10dp"
+		android:paddingLeft="30dp"
+		android:paddingRight="30dp">
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:text="Contactos"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:paddingBottom="0dp"
+				android:gravity="center_vertical"/>
+
+			<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:gravity="right">
+
+				<ImageButton
+					android:layout_width="40dp"
+					android:layout_height="40dp"
+					android:id="@+id/btn_agregar"
+					android:background="@drawable/mas40"/>
+
+			</RelativeLayout>
+
+		</LinearLayout>
+
+		<View
+			android:background="?android:attr/dividerVertical"
+			android:layout_width="match_parent"
+			android:layout_height="1dp"
+			android:layout_marginTop="10dp"/>
+
+		<ListView
+			android:id="@+id/lista_contactos"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"/>
+
+	</LinearLayout>
+
+</LinearLayout>
+
